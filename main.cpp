@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 using namespace sf;
+ /*
  int main()
 {
     //Create a video mode object
@@ -84,3 +85,4 @@ using namespace sf;
 
     return 0;
 }
+*/
