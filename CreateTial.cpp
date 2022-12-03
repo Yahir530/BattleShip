@@ -6,7 +6,7 @@
 using namespace std;
 using namespace sf;
 
-
+//Function creates the tial sprites wich will be stored in a class
 Field* CreateTials(int num)
 {
 	Field* Tial = new Field[num];

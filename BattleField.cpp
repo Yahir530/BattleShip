@@ -7,7 +7,7 @@
 using namespace std;
 using namespace sf;
 
-
+//Planning on making this the main game loop
 int main()
 {
     Field* Player1tials = NULL;
@@ -25,6 +25,7 @@ int main()
     delete[] Player1tials;
     Player1tials = CreateTials(num);
 
+    //load a texture for background
     Texture battleshipMap;
     battleshipMap.loadFromFile("Textures/TankMapBackroundTexture.png");
     Sprite battleShipMap;
@@ -56,7 +57,7 @@ int main()
                 Select = Mouse::getPosition(window);
                 Check.x = Select.x;
                 Check.y = Select.y;
-
+                //Moves the clicked tial out of the way
                 for (int i = 0; i < num; i++)
                 {
                     if (Player1tials[i].GetTialS().getGlobalBounds().contains(Check))
@@ -79,9 +80,6 @@ int main()
             {
                 window.draw(Player1tials[i].GetTialS());
             }
-
-            
-          
 
             window.display();
 
