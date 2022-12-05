@@ -11,12 +11,11 @@ Field* CreateTials(int num)
 {
 	Field* Tial = new Field[num];
 	Vector2f Pos;
-	Vector2f gone;
-	gone.x = 900.0;
-	gone.y = 0.0;
+
 	Pos.x = 400.0;
 	Pos.y = 200.0;
 	int x = 0;
+
 	Vector2f tempPos = Pos;
 	for (int j = 0; j < 8; j++)
 	{
@@ -29,12 +28,31 @@ Field* CreateTials(int num)
 		tempPos.y += 80;
 		tempPos.x = Pos.x;
 	}
-	for (int j = 0; j < num; j++)
+	
+	return Tial;
+}
+
+Field* CreateTialsWater(int num)
+{
+	Field* Tial = new Field[num];
+	Vector2f Pos;
+
+	Pos.x = 400.0;
+	Pos.y = 200.0;
+	int x = 0;
+
+	Vector2f tempPos = Pos;
+	for (int j = 0; j < 8; j++)
 	{
-		if (Tial[j].GetStatus() == true)
+		for (int i = 0; i < 8; i++)
 		{
-			Tial[j].SetTial(gone);
+			tempPos.x += 90;
+			Tial[x].SetTialWater(tempPos);
+			x++;
 		}
+		tempPos.y += 80;
+		tempPos.x = Pos.x;
 	}
+
 	return Tial;
 }

@@ -11,6 +11,7 @@ class Field
 public:
 	Field();
 	void SetTial(Vector2f Pos);
+	void SetTialWater(Vector2f Pos);
 	Sprite GetTialS();
 	void Hit();
 	bool GetStatus();
@@ -20,6 +21,7 @@ private:
 	Sprite Tial;
 	bool Is_Hit = false;
 	Texture blue;
+	Texture purple;
 	Vector2f Location;
 
 };

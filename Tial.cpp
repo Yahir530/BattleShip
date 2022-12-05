@@ -9,11 +9,19 @@ using namespace sf;
 Field::Field()
 {
 	blue.loadFromFile("Textures/Tial.png");
+	purple.loadFromFile("Textures/Tial2.png");
 }
 
 void Field::SetTial(Vector2f Pos)
 {
 	Tial.setTexture(blue);
+	Tial.setPosition(Pos);
+	Location = Pos;
+}
+
+void Field::SetTialWater(Vector2f Pos)
+{
+	Tial.setTexture(purple);
 	Tial.setPosition(Pos);
 	Location = Pos;
 }

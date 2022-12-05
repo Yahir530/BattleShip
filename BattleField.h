@@ -4,3 +4,4 @@
 using namespace sf;
 
 Field* CreateTials(int num);
+Field* CreateTialsWater(int num);
