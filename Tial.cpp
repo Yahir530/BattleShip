@@ -38,4 +38,3 @@ void Field::update(Vector2f Pos)
 	Tial.setPosition(Pos);
 }
 
-

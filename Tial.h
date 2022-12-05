@@ -23,5 +23,7 @@ private:
 	Vector2f Location;
 
 };
+
+
 #endif 
 
