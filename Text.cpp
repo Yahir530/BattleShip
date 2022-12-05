@@ -24,7 +24,7 @@ string Player1Text()
 	string txt;
 
 	txt = 
-		"Player 1's Turn\n" 
+		"Player 1's Board\n" 
 		"(Remove this later) Right now swap between\n player 1 and 2 by pressing space";
 	return txt;
 
@@ -35,7 +35,7 @@ string Player2Text()
 
 	string txt;
 
-	txt = "Player 2's Turn";
+	txt = "Player 2's Board";
 	return txt;
 }
 
