@@ -142,6 +142,13 @@ int main()
                     state = State::Player2ScreenWater;
                 }
             }
+            else if (Keyboard::isKeyPressed(Keyboard::B) || state == State::Player1ScreenWater || state == State::Player2ScreenWater || state == State::Player1Screen || state == State::Player2Screen)
+            {
+                if (event.key.code == Keyboard::B)
+                {
+                    state = State::Title;
+                }
+            }
         }
         
         
