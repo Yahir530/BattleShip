@@ -7,12 +7,12 @@ Boat::Boat(): BOATCOUNT(4),HORIZONTAL(90),VERTICAL(180),MARGIN(50),STARTED(1)
 	textureRect.push_back(sf::IntRect(0,0,31,147));
 	
 	//EXPLOSION
-	explosionTexture.loadFromFile("Resources/Boats.png");
+	explosionTexture.loadFromFile("Boats.png");
 	explosion.setTexture(explosionTexture);
 	explosion.setTextureRect(sf::IntRect(74,1,39,33));
 
 	//FILLED CASE
-	filledTexture.loadFromFile("Resources/Boats.png");
+	filledTexture.loadFromFile("Boats.png");
 	filledCase.setTexture(filledTexture);
 	filledCase.setTextureRect(sf::IntRect(114,9,23,23));
 	filledCase.setOrigin(-1,-6);
