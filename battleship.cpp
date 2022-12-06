@@ -7,18 +7,18 @@ Boat::Boat(): BOATCOUNT(4),HORIZONTAL(90),VERTICAL(180),MARGIN(50),STARTED(1)
 	textureRect.push_back(sf::IntRect(0,0,31,147));
 	
 	//EXPLOSION
-	explosionTexture.loadFromFile("Boats.png");
+	explosionTexture.loadFromFile("Textures/Battleship.png");
 	explosion.setTexture(explosionTexture);
 	explosion.setTextureRect(sf::IntRect(74,1,39,33));
 
 	//FILLED CASE
-	filledTexture.loadFromFile("Boats.png");
+	filledTexture.loadFromFile("Textures/Battleship.png");
 	filledCase.setTexture(filledTexture);
 	filledCase.setTextureRect(sf::IntRect(114,9,23,23));
 	filledCase.setOrigin(-1,-6);
 	
 	// PLAYED CASE
-	playedTexture.loadFromFile("Boats.png");
+	playedTexture.loadFromFile("Textures/Battleship.png");
 	playedCase.setTexture(playedTexture);
 	playedCase.setTextureRect(sf::IntRect(37,6,30,31));
 	playedCase.setOrigin(-1,-2);
@@ -38,7 +38,7 @@ Boat::Boat(): BOATCOUNT(4),HORIZONTAL(90),VERTICAL(180),MARGIN(50),STARTED(1)
 
 void Boat::initialize()
 {
-	boatTexture.loadFromFile("Boats.png");
+	boatTexture.loadFromFile("Textures/Battleship.png");
 	
 	// DEFINE TEXTURE / POSITION / ORIGIN FOR EACH BOAT
 	for(int i = 0; i < BOATCOUNT ; i++)
