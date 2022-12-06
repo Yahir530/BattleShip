@@ -18,7 +18,7 @@ Boat::Boat(): BOATCOUNT(4),HORIZONTAL(90),VERTICAL(180),MARGIN(50),STARTED(1)
 	filledCase.setOrigin(-1,-6);
 	
 	// PLAYED CASE
-	playedTexture.loadFromFile("Resources/Boats.png");
+	playedTexture.loadFromFile("Boats.png");
 	playedCase.setTexture(playedTexture);
 	playedCase.setTextureRect(sf::IntRect(37,6,30,31));
 	playedCase.setOrigin(-1,-2);
@@ -38,7 +38,7 @@ Boat::Boat(): BOATCOUNT(4),HORIZONTAL(90),VERTICAL(180),MARGIN(50),STARTED(1)
 
 void Boat::initialize()
 {
-	boatTexture.loadFromFile("Resources/Boats.png");
+	boatTexture.loadFromFile("Boats.png");
 	
 	// DEFINE TEXTURE / POSITION / ORIGIN FOR EACH BOAT
 	for(int i = 0; i < BOATCOUNT ; i++)
