@@ -82,6 +82,33 @@ int main()
     Sprite TitleScreen;
     TitleScreen.setTexture(Title);
     TitleScreen.setPosition(320, 0);
+ 
+    //Set ship sprites textures
+    Texture Battleshiptexture;
+    Battleshiptexture.loadFromFile("Textures/BattleShipSprite.png"):
+    Sprite TestureBattleship;
+    TestureBattleship.setTexture(Battleshiptexture);
+    TestureBattleship.setPosition(190,0):
+	
+    Texture scout;
+    scout. loadFromFile("Textures/ScoutCruizerSprite.png");
+    Sprite scoutcruzer;
+    scoutCruzer.setTexture(scout);
+    scoutCruzer.setPosition(190.490):
+	
+    Texture submarine;
+    submarine. loadFromFile("Textures/SubmarineSprite.png");
+    Sprite submarineTexture;
+    submarineTexture.setTexture(submarine);
+    submarineTexture.setPosition(640,-165);
+	
+    Texture aircraftCarrier;
+    aircraftCarrier.loadFromFile("Textures/AircraftCarrierSprite.png"):
+    Sprite aircraftcarrierTexture;
+    aircrafttarrierTexture.setTexture(aircraftcarrier):
+    aircraftCarrierTexture.setPosition(530,25);
+
+
 
 
     while (window.isOpen())
@@ -230,6 +257,10 @@ int main()
 
             player1.setString(Player1Text());
             window.draw(player1);
+            window. draw(aircraftCarrierTexture):
+            window.draw(submarineTexture);
+            window.draw(scoutCruzer);
+            window. draw(TestureBattleship);
             window.display();
 
         }
