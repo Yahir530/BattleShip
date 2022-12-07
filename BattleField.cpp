@@ -94,7 +94,7 @@ int main()
     scout.loadFromFile("Textures/ScoutCruizerSprite.png");
     Sprite scoutcruzer;
     scoutcruzer.setTexture(scout);
-    scoutcruzer.setPosition(190.490);
+    scoutcruzer.setPosition(190,490);
 	
     Texture submarine;
     submarine. loadFromFile("Textures/SubmarineSprite.png");
@@ -115,8 +115,8 @@ int main()
     enemyTestureBattleship.setPosition(190,490);
   
     Sprite enemyscoutcruzer;
-    enemyscoutCruzer.setTexture(scout);
-    enemyscoutCruzer.setPosition(190,0);
+    enemyscoutcruzer.setTexture(scout);
+    enemyscoutcruzer.setPosition(190,0);
   
     Sprite enemysubmarineTexture;
     enemysubmarineTexture.setTexture(submarine);
@@ -124,7 +124,7 @@ int main()
   
     Sprite enemyaircraftCarrierTexture;
     enemyaircraftCarrierTexture.setTexture(aircraftCarrier);
-    enemyaircraftcarrierTexture.setPosition(640,-125);
+    enemyaircraftCarrierTexture.setPosition(640,-125);
     // User Tank Sprites
     Texture Maus;
     Maus.loadFromFile("Textures/MausTankSprite.png");
@@ -322,7 +322,7 @@ int main()
 
             player1.setString(Player1Text());
             window.draw(player1);
-            window. draw(aircraftcarrierTexture):
+            window. draw(aircraftcarrierTexture);
             window.draw(submarineTexture);
             window.draw(scoutcruzer);
             window. draw(TestureBattleship);
@@ -414,7 +414,7 @@ int main()
             window.draw(player2);
             window.draw(enemyaircraftCarrierTexture);
             window.draw (enemysubmarineTexture);
-            window. draw (enemyscoutCruzer);
+            window. draw (enemyscoutcruzer);
             window. draw (enemyTestureBattleship);
             window.display();
 
