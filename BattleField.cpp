@@ -126,8 +126,49 @@ int main()
     enemyaircraftCarrierTexture.setTexture(aircraftCarrier);
     enemyaircraftcarrierTexture.setPosition(640,-125):
     // User Tank Sprites
+    Texture Maus;
+    Maus.loadFromFile("Textures/MausTankSprite.png");
+    Sprite MausTexture;
+    MausTexture. setTexture (Maus);
+    MausTexture. setPosition(50, 370);
 
+    Texture littleTank;
+    littleTank.loadFromFile("Textures/TankSpritez.png");
+    Sprite littleTankTexture;
+    littleTankTexture.setTexture(littleTank);
+    littleTankTexture.setPosition(370,110);
 
+    Texture sturmTiger;
+    sturmTiger. loadFromFile ("Textures/Tank.png");
+    Sprite sturmTigerTexture;
+    sturmTigerTexture.setTexture(sturmTiger);
+    sturmTigerTexture.setPosition(580,99);
+
+    Texture isthree;
+    isthree.loadFromFile("Textures/EnemyTankIS-3Sprtie(1).png");
+    Sprite isthreeTexture;
+    isthreeTexture,setTexture(isthree);
+    isthreeTexture,setPosition(630,25);
+    // Enemy Tank Sprites
+    Texture meighteen;
+    meighteen.loadFromFile("Textures/EnemyM-18TankSprite.png");
+    Sprite enemymeighteen;
+    enemymeighteen.setTexture(meighteen);
+    enemymeighteen.setPosition(280,600);
+  
+    Texture tthirtyfour;
+    thirtyfour.loadFromFile("Textures/EnemyT-34TankSprite.png");
+    Sprite enemytthirtyfour;
+    enemytthirtyfour.setTexture(tthirtyfour);
+    enemytthirtyfour.setPosition(190,0);
+  
+    Sprite enemysturmTigerTexture;
+    enemysturmTigerTexture.setTexture(sturmTiger);
+    enemysturmTigerTexture.setPosition(610,485);
+  
+    Sprite enemyisthreeTexture;
+    enemyisthreeTexture.setTexture(isthree);
+    enemyisthreeTexture.setPosition(640,-125);
 
 
 
