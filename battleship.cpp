@@ -1,3 +1,4 @@
+#include "Battleship.h"
 Boat::Boat(): BOATCOUNT(4),HORIZONTAL(90),VERTICAL(180),MARGIN(50),STARTED(1)
 {	
 	// SMALL / MEDIUM / BIG BOATS
