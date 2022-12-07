@@ -107,6 +107,26 @@ int main()
     Sprite aircraftcarrierTexture;
     aircrafttarrierTexture.setTexture(aircraftcarrier):
     aircraftCarrierTexture.setPosition(530,25);
+	
+    // Enemy ship sprites
+
+    Sprite enemyTestureBattleship;
+    enemyTestureBattleship.setTexture(Battleshiptexture):
+    enemyTestureBattleship.setPosition(190,490);
+  
+    Sprite enemyscoutcruzer;
+    enemyscoutCruzer.setTexture(scout):
+    enemyscoutCruzer.setPosition(190,0):
+  
+    Sprite enemysubmarineTexture;
+    enemysubmarineTexture.setTexture(submarine);
+    enemysubmarineTexture.setPosition(220,45);
+  
+    Sprite enemyaircraftCarrierTexture;
+    enemyaircraftCarrierTexture.setTexture(aircraftCarrier);
+    enemyaircraftcarrierTexture.setPosition(640,-125):
+    // User Tank Sprites
+
 
 
 
