@@ -83,18 +83,18 @@ int main()
     TitleScreen.setTexture(Title);
     TitleScreen.setPosition(320, 0);
  
-    //Set ship sprites textures
+    //User ship sprites textures
     Texture Battleshiptexture;
-    Battleshiptexture.loadFromFile("Textures/BattleShipSprite.png"):
+    Battleshiptexture.loadFromFile("Textures/BattleShipSprite.png");
     Sprite TestureBattleship;
     TestureBattleship.setTexture(Battleshiptexture);
-    TestureBattleship.setPosition(190,0):
+    TestureBattleship.setPosition(190,0);
 	
     Texture scout;
     scout. loadFromFile("Textures/ScoutCruizerSprite.png");
     Sprite scoutcruzer;
     scoutCruzer.setTexture(scout);
-    scoutCruzer.setPosition(190.490):
+    scoutCruzer.setPosition(190.490);
 	
     Texture submarine;
     submarine. loadFromFile("Textures/SubmarineSprite.png");
@@ -105,18 +105,18 @@ int main()
     Texture aircraftCarrier;
     aircraftCarrier.loadFromFile("Textures/AircraftCarrierSprite.png"):
     Sprite aircraftcarrierTexture;
-    aircrafttarrierTexture.setTexture(aircraftcarrier):
+    aircrafttarrierTexture.setTexture(aircraftcarrier);
     aircraftCarrierTexture.setPosition(530,25);
 	
     // Enemy ship sprites
 
     Sprite enemyTestureBattleship;
-    enemyTestureBattleship.setTexture(Battleshiptexture):
+    enemyTestureBattleship.setTexture(Battleshiptexture);
     enemyTestureBattleship.setPosition(190,490);
   
     Sprite enemyscoutcruzer;
-    enemyscoutCruzer.setTexture(scout):
-    enemyscoutCruzer.setPosition(190,0):
+    enemyscoutCruzer.setTexture(scout);
+    enemyscoutCruzer.setPosition(190,0);
   
     Sprite enemysubmarineTexture;
     enemysubmarineTexture.setTexture(submarine);
@@ -124,7 +124,7 @@ int main()
   
     Sprite enemyaircraftCarrierTexture;
     enemyaircraftCarrierTexture.setTexture(aircraftCarrier);
-    enemyaircraftcarrierTexture.setPosition(640,-125):
+    enemyaircraftcarrierTexture.setPosition(640,-125);
     // User Tank Sprites
     Texture Maus;
     Maus.loadFromFile("Textures/MausTankSprite.png");
@@ -302,6 +302,10 @@ int main()
 
             player1.setString(Player1Text());
             window.draw(player1);
+            window.draw(isthreeTexture);
+            window.draw(littleTankTexture);
+            window.draw(sturmTigerTexture);
+            window.draw (MausTexture);
             window.display();
 
         }
@@ -388,6 +392,10 @@ int main()
 
             player2.setString(Player2Text());
             window.draw(player2);
+            window.draw (enemymeighteen);
+            window.draw(enemytthirtyfour);
+            window.draw(enemysturmTigerTexture);
+            window.draw(enemyisthreeTexture);
             window.display();
 
         }
