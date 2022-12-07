@@ -76,7 +76,8 @@ public:
 #include "array"
 #include <SFML/Graphics.hpp>
 
-
+#ifndef Battleship_H
+#define Battleship_H
 
 
 class Boat
