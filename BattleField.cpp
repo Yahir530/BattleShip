@@ -363,6 +363,10 @@ int main()
 
             player2.setString(Player2Text());
             window.draw(player2);
+            window.draw(enemyaircraftCarrierTexture);
+            window.draw (enemysubmarineTexture);
+            window. draw (enemyscoutCruzer);
+            window. draw (enemyTestureBattleship);
             window.display();
 
         }
