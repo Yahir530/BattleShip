@@ -91,10 +91,10 @@ int main()
     TestureBattleship.setPosition(190,0);
 	
     Texture scout;
-    scout. loadFromFile("Textures/ScoutCruizerSprite.png");
+    scout.loadFromFile("Textures/ScoutCruizerSprite.png");
     Sprite scoutcruzer;
-    scoutCruzer.setTexture(scout);
-    scoutCruzer.setPosition(190.490);
+    scoutcruzer.setTexture(scout);
+    scoutcruzer.setPosition(190.490);
 	
     Texture submarine;
     submarine. loadFromFile("Textures/SubmarineSprite.png");
@@ -103,10 +103,10 @@ int main()
     submarineTexture.setPosition(640,-165);
 	
     Texture aircraftCarrier;
-    aircraftCarrier.loadFromFile("Textures/AircraftCarrierSprite.png"):
+    aircraftCarrier.loadFromFile("Textures/AircraftCarrierSprite.png");
     Sprite aircraftcarrierTexture;
-    aircrafttarrierTexture.setTexture(aircraftcarrier);
-    aircraftCarrierTexture.setPosition(530,25);
+    aircraftcarrierTexture.setTexture(aircraftCarrier);
+    aircraftcarrierTexture.setPosition(530,25);
 	
     // Enemy ship sprites
 
@@ -133,7 +133,7 @@ int main()
     MausTexture. setPosition(50, 370);
 
     Texture littleTank;
-    littleTank.loadFromFile("Textures/TankSpritez.png");
+    littleTank.loadFromFile("Textures/TankSprite2.png");
     Sprite littleTankTexture;
     littleTankTexture.setTexture(littleTank);
     littleTankTexture.setPosition(370,110);
@@ -145,10 +145,10 @@ int main()
     sturmTigerTexture.setPosition(580,99);
 
     Texture isthree;
-    isthree.loadFromFile("Textures/EnemyTankIS-3Sprtie(1).png");
+    isthree.loadFromFile("Textures/EnemyTankIS-3Sprtie (1).png");
     Sprite isthreeTexture;
-    isthreeTexture,setTexture(isthree);
-    isthreeTexture,setPosition(630,25);
+    isthreeTexture.setTexture(isthree);
+    isthreeTexture.setPosition(630,25);
     // Enemy Tank Sprites
     Texture meighteen;
     meighteen.loadFromFile("Textures/EnemyM-18TankSprite.png");
@@ -157,7 +157,7 @@ int main()
     enemymeighteen.setPosition(280,600);
   
     Texture tthirtyfour;
-    thirtyfour.loadFromFile("Textures/EnemyT-34TankSprite.png");
+    tthirtyfour.loadFromFile("Textures/EnemyT-34TankSprite.png");
     Sprite enemytthirtyfour;
     enemytthirtyfour.setTexture(tthirtyfour);
     enemytthirtyfour.setPosition(190,0);
@@ -322,9 +322,9 @@ int main()
 
             player1.setString(Player1Text());
             window.draw(player1);
-            window. draw(aircraftCarrierTexture):
+            window. draw(aircraftcarrierTexture):
             window.draw(submarineTexture);
-            window.draw(scoutCruzer);
+            window.draw(scoutcruzer);
             window. draw(TestureBattleship);
             window.display();
 
